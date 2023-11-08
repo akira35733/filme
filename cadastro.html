@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <button type="button" onclick="cadastrarUsuario()">Cadastrar</button>
+    </form>
+
+    <div id="mensagem"></div>
+
+    <script>
+        function cadastrarUsuario() {
+            // Obter os valores do formulário
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            // Validar os campos (adicionar mais validações conforme necessário)
+            if (nome === "" || email === "" || senha === "") {
+                document.getElementById("mensagem").innerHTML = "Por favor, preencha todos os campos.";
+                return;
+            }
+
+            // Criar um objeto de usuário
+            var usuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            // Aqui você pode enviar o objeto 'usuario' para um servidor backend para armazenamento
+            // Por enquanto, apenas exibiremos os dados no console
+            console.log("Usuário cadastrado: ", usuario);
+
+            // Limpar o formulário e exibir uma mensagem de sucesso
+            document.getElementById("cadastroForm").reset();
+            document.getElementById("mensagem").innerHTML =
+             "Cadastro realizado com sucesso!";
+        }
+    </script>
+</body>
+</html>

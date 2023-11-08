@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ol.css">
+  <link rel="stylesheet" href="cadastro.html">
+</head>
+<body>
+  <main>
+    <div id="banner">
+      <div id="mensagem"><img src="tt.png" class="image"></div>
+  </div>
+  
+  <script>
+      var mensagemElement = document.getElementById("mensagem");
+      var bannerWidth = document.getElementById("banner").offsetWidth;
+  
+      function animarMensagem() {
+          var left = -200; // Inicializa a posição à esquerda da tela
+          var interval = setInterval(function() {
+              left += 5; // Move 5 pixels à direita a cada iteração
+              mensagemElement.style.left = left + "px";
+  
+              // Verifica se a mensagem atingiu o final do banner
+              if (left >= bannerWidth) {
+                  clearInterval(interval); // Para a animação
+                  setTimeout(function() {
+                      mensagemElement.style.left = "-200px"; // Reinicia a mensagem à esquerda
+                      animarMensagem(); // Inicia a animação novamente
+                  }, 1000); // Espera 1 segundo antes de reiniciar
+              }
+          }, 30); // Intervalo de 30 milissegundos para suavizar a animação
+      }
+  
+      animarMensagem(); // Inicia a animação quando a página carrega
+  </script>
+
+    
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+                <a href="https://www.youtube.com/shorts/pD2oZt8-LuM">
+              <img src="evermore.jpg" alt="Foto 01">
+            </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="midnights.jpg" alt="Foto 02">
+            </div>
+          </div>
+          <div class="swiper-slide">
+        <a href="https://evandrogrichok.github.io/filmes/">
+            <div class="project-img">
+              <img src="tv.jpg" alt="Foto 03">
+            </div>
+        </a>
+          </div>
+        </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="teste.js"></script>
+<!--movies---------------------------->
+<div class="movies-heading">
+  <h2></h2>
+</div>
+<section id="movies-list">
+  <!--box-1------------------------>
+  <div class="header"></div>
+    <div class="scrollable">
+  <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://www.netflix.com/br/title/81026251">
+          <img src="reputation.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Reputation ST Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-2------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://www.youtube.com/watch?v=KudedLV0tP0">
+          <img src="tour.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: The Eras Tour Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-3------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://www.disneyplus.com/pt-br/movies/folklore-sessoes-no-long-pond-studio/3Xlc0EjKtKpp">
+          <img src="folklore.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Folklore the long pond studios sessions Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-4------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://open.spotify.com/intl-pt/album/2KLFL8R9r2ubCQxbBxgLT7">
+          <img src="lover.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Lover Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-5------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://open.spotify.com/intl-pt/album/6AORtDjduMM3bupSWzbTSG">
+          <img src="ever.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Lover Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-6------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://www.netflix.com/br/title/81028336">
+          <img src="miss.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Miss Americana Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-7------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://open.spotify.com/playlist/4sFuHQ9zRqeuZ1Q5kcZJTI">
+          <img src="ts.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: 1989 Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-8------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <a href="https://www.youtube.com/watch?v=bOqxDs2SZ4U">
+          <img src="aaa.jpg">
+        </a>
+      </div>
+      <!--text--------->
+      <a href="#">
+          Tainara Silva: Fale Agora [In English] With English Subtitle
+      </a>
+      
+  </div>
+  <a href="cadastro.html" id="logo"><input id="input-padrao" type="submit" value="Fazer Cadastro" class="enviar"></a>
+  <div class="footer"></div>
+  <script src="script.js"></script>
+</section>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
